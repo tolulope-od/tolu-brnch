@@ -16,8 +16,6 @@ function MessageBody() {
     toggleMessagesLoading();
     try {
       const request = await axios.get(`/api/v1/messages/${state.messageRoomId}`);
-
-      console.log(request.data);
       dispatch({
         type: 'viewingRoomMessages',
         payload: request.data.data,
