@@ -32,10 +32,7 @@ function MessageInput() {
     const lowerCaseTerm = term.toLowerCase();
     const result = state.messages.map((message) => message.messages.filter((msg) => 
     msg.messageBody.toLowerCase().includes(lowerCaseTerm)));
-    console.log(result);
   }
-
-  console.log(state);
   return (
     <div>
       {
